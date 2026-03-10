@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "source_name": "vlr_vct_public",
+      "cohort": "pro",
+      "format": "json_bundle",
+      "description": "Public VCT and broader pro-play data fetched from VLR-backed public endpoints.",
+      "layout": {
+        "matches_path": "raw/vct/vlr_matches.json",
+        "player_matches_path": "raw/vct/vlr_player_matches.json"
+      }
+    },
+    {
+      "source_name": "henrik_public_competitive",
+      "cohort": "public",
+      "format": "json_bundle",
+      "description": "Public competitive match history fetched from Henrik's public VALORANT API.",
+      "layout": {
+        "matches_path": "raw/public/henrik_matches.json",
+        "player_matches_path": "raw/public/henrik_player_matches.json"
+      }
+    }
+  ]
+}

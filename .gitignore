@@ -15,7 +15,7 @@ downloads/
 eggs/
 .eggs/
 lib/
-lib64/
+lib64
 parts/
 sdist/
 var/
@@ -25,6 +25,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+prom
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -205,3 +206,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project data artifacts
+data/raw/**/*.json
+data/raw/**/*.csv
+data/interim/**/*.parquet
+data/interim/**/*.csv
+data/processed/**/*.parquet
+data/processed/**/*.csv
+artifacts/**/*.parquet
+artifacts/**/*.json
+reports/figures/**/*.html
+results.json
