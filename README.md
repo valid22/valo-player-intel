@@ -332,3 +332,4 @@ PYTHONPATH=src .venv/bin/python -m pytest -q
 - `artifacts/prediction/`: model metrics, predictions, calibration curves
 - `reports/figures/`: saved Plotly HTML figures
 - `tests/`: unit tests
+
