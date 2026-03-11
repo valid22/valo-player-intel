@@ -3,7 +3,7 @@ name = "valo-player-intel"
 version = "0.1.0"
 description = "VALORANT Player Intelligence: cohort-aware segmentation and win probability modeling."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.14"
 license = { text = "MIT" }
 authors = [{ name = "dote" }]
 dependencies = [
@@ -16,7 +16,6 @@ dependencies = [
   "PyYAML>=6.0.2",
   "requests>=2.32",
   "tenacity>=9.0",
-  "torch>=2.5",
   "vlrdevapi>=1.6.1",
 ]
 
@@ -24,6 +23,9 @@ dependencies = [
 dev = [
   "pytest>=8.3",
   "ruff>=0.9",
+]
+torch = [
+  "torch>=2.5,<2.7; python_version < '3.14'",
 ]
 
 [project.scripts]
